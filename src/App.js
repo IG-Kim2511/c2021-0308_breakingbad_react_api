@@ -1,5 +1,9 @@
 import React ,{useState,useEffect}from 'react'
 import axios from 'axios';
+import './App.css'
+
+import CharGrid from './components/char/CharGrid'
+
 
 function App() {
 const [Items, setItems] = useState([])
@@ -18,10 +22,11 @@ useEffect(() => {
   fetchItems()
 }, [])
 
-  return (    <div className="container">
+  return (  
+    <div className="container"> 
+    app
 
-  
-    ggg
+     <CharGrid IsLoading={IsLoading} Items={Items}/>
     </div>
   );
 }
