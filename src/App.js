@@ -23,8 +23,7 @@ useEffect(() => {
 }, [])
 
   return (  
-    <div className="container"> 
-    app
+    <div className="container">    
 
      <CharGrid IsLoading={IsLoading} Items={Items}/>
     </div>
