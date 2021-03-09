@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css'
 
 import CharGrid from './components/char/CharGrid'
+import Search from './components/Search'
 
 
 function App() {
@@ -24,6 +25,10 @@ useEffect(() => {
 
   return (  
     <div className="container">    
+
+      <div className="center head">breaking bad tv show api</div>
+
+    <Search/>
 
      <CharGrid IsLoading={IsLoading} Items={Items}/>
     </div>
