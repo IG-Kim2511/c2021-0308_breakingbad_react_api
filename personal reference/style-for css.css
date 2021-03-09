@@ -1,0 +1,156 @@
+/* 🦄ready- Universal tags */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  max-width: 1000px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* 🦄ready- css trick */
+
+.title {
+  background-color: lightsteelblue;
+}
+
+.overflow {
+  overflow: hidden;
+}
+.relative {
+  position: relative;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.transforming {
+  transition: transform 0.5s;
+}
+
+/* 🦄ready- Global */
+
+:root {
+  /* color */
+
+  --naver-color :  #0eae44;
+  --kakao-color :  #fee101;
+
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+
+  --color-black: #000000;
+  --color-grey: #616161;
+  --color-dark-grey: #4d4d4d;
+  --color-light-grey: #7c7979;
+  
+  --color-blue: #2b81e4;
+  --color-light-mint: #cbf3f0;
+  --color-yellow: #fff7d1;
+  --color-orange: #feb546;
+  --color-strong-orange: #dc2f02;
+  
+  --test-color: yellow;
+  
+  /* letterspacing : basic 0.1rem */
+  --letterspacing-basic: 0.1rem;
+  --letterspacing-test: 2rem;
+
+  /* Size :basic 4px=0.5rem  */
+  --size-border-basic-radius: 0.5rem;
+  --size-border-test-radius: 1rem;
+
+  /* Animation :basic 300ms=0.3s  */
+
+  --animation_basic-duration: 0.3s;
+  --animation_test-duration: 1s;
+}
+
+/* 🦄 start coding
+- Navbar */
+#navbar {
+}
+
+/* 🦄 keyframs */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 🦄 [responsive] for below 768px screen width */
+
+/*🚀 breakpoint
+1200px : pc⚡
+992px : Tablet  ⚡⚡⚡기준
+(768px : Tablet or phone)
+576px : phone⚡
+*/
+
+/* me : 
+992px : Tablet 기준으로 작업하고, 
+576px: phone - responsive 추가
+1200px : pc- responsive 추가
+
+(1200px : pc  
+@media (min-width: 1200px) {  
+  max-width: 1200px
+  margin: auto;
+*/
+
+/* @ 768px */
+@media (max-width: 768px) {
+  :root {
+  }
+
+  html {
+    font-size: 70%;
+  }
+}
+
+/* @ 576px */
+@media (max-width: 576px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #skills,
+  #language {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
