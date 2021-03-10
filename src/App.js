@@ -9,6 +9,7 @@ import Search from './components/Search'
 function App() {
 const [Items, setItems] = useState([])
 const [IsLoading, setIsLoading] = useState(true)
+const [Query, setQuery] = useState('')
 
 useEffect(() => {
   const fetchItems = async()=>{
@@ -28,7 +29,7 @@ useEffect(() => {
 
       <div className="center head">breaking bad tv show api</div>
 
-    <Search/>
+    {/* <Search getQuery={(q)=>{setQuery(q)}}/> */}
 
      <CharGrid IsLoading={IsLoading} Items={Items}/>
     </div>
