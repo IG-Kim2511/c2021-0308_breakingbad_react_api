@@ -27,7 +27,7 @@ useEffect(() => {
   return (  
     <div className="container">    
 
-      <div className="center head">breaking bad tv show api</div>
+      <div className="center head">Breaking Bad cards from API</div>
 
     {/* <Search getQuery={(q)=>{setQuery(q)}}/> */}
 
